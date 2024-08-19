@@ -53,12 +53,12 @@
                 {
                     "type": "git",
                     "url": "https://codeberg.org/eyekay/webapps.git",
-                    "tag": "0.5.3",
+                    "tag": "0.5.4",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
                     },
-                    "commit": "54b20f82ae4096ec2bfeb3cea60c2f801ad66658"
+                    "commit": "659b38654680e13a956369859a3ebe96e2a25367"
                 }
             ]
         }
