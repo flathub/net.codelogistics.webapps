@@ -1,7 +1,7 @@
 {
     "app-id": "net.codelogistics.webapps",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "command": "webapps",
     "finish-args": [
@@ -13,33 +13,7 @@
         "--socket=pulseaudio",
         "--filesystem=xdg-data"
     ],
-    "cleanup": [
-        "/include",
-        "/lib/pkgconfig",
-        "/share/gir-1.0",
-        "/share/vala"
-    ],
     "modules": [
-        {
-            "name": "libportal",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Ddocs=false",
-                "-Dintrospection=true"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/flatpak/libportal.git",
-                    "tag": "0.11.0",
-                    "commit": "fc4d62cfe131e8494c82f597f92b2234d584c367",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^([\\d.]+)$"
-                    }
-                }
-            ]
-        },
         {
             "name": "webapps",
             "builddir": true,
